@@ -20,7 +20,7 @@ export const C = {
 };
 
 export const APP_STORE = 'https://apps.apple.com/us/app/dot-1-news/id6757212352';
-export const SITE_URL = (process.env.PUBLIC_WEB_URL || 'https://news.dot1.media').replace(/\/$/, '');
+export const SITE_URL = (process.env.PUBLIC_WEB_URL || 'https://discernt.dot1.media').replace(/\/$/, '');
 
 export function clip(s: string, n: number): string {
   const t = (s || '').replace(/\s+/g, ' ').trim();

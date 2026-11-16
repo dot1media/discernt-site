@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og';
 import { sql } from '@/lib/db';
 import { isImageUrl } from '@/lib/media';
 
-// Social share image, served from news.dot1.media at exactly 1200x630 (Facebook's link-card size).
+// Social share image, served from discernt.dot1.media at exactly 1200x630 (Facebook's link-card size).
 // Facebook often refuses to show an image on first share unless it is a known size on a domain it
 // can fetch quickly, so instead of pointing at the raw upload we re-frame it here.
 export const runtime = 'nodejs';
