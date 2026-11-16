@@ -5,7 +5,7 @@ import Footer from '@/app/components/Footer';
 
 export const metadata: Metadata = {
   title: 'The Four-Lens Assessment (D1-4LS) · Discernt',
-  description: 'How Discernt assesses stories across four lenses: biblical alignment, prophetic relevance, source credibility, and human impact. An experimental framework still being tested, and your feedback is welcome.',
+  description: 'How Discernt assesses stories across four lenses: scriptural grounding, kingdom significance, source credibility, and fruit and edification. An experimental framework still being tested, and your feedback is welcome.',
   alternates: { canonical: SITE_URL + '/d1-4ls' },
 };
 
@@ -26,17 +26,17 @@ export default function D14LSPage() {
           <h2>The four lenses</h2>
           <p>Each lens is scored from 0 to 10, built from five smaller indicators. The four lens scores are the real result and are meant to be read together. They measure very different things, so a high score on one says nothing about the others.</p>
           <ul className="names">
-            <li><span className="role">Biblical Alignment (BAI)</span><span className="person">Whether the article&rsquo;s framing is coherent with our declared biblical reference standard. A high BAI does not mean the facts are verified or that every Christian tradition would agree.</span></li>
-            <li><span className="role">Prophetic Significance (PSI)</span><span className="person">Whether the subject relates to defined biblical prophetic themes, held with restraint. This is thematic relevance only. It is never a prediction, a claim of fulfillment, or date-setting. A low PSI is normal for ordinary news and does not mean weak journalism.</span></li>
-            <li><span className="role">Source Credibility (SCI)</span><span className="person">How well the story&rsquo;s factual claims are sourced and checked. This is about evidence only, and it is separate from theological alignment. When sourcing is thin, we say so plainly.</span></li>
-            <li><span className="role">Humanities Impact (HII)</span><span className="person">How the story recognizes human dignity, consequences, and responsibility. A low score can simply mean the consequences are local in scope, not that the reporting lacks compassion.</span></li>
+            <li><span className="role">Scriptural Grounding (BAI)</span><span className="person">How clearly the story is illuminated by Scripture and consistent with the historic Christian faith, pointing to Christ rather than to spectacle. A high score does not mean the facts are verified or that every Christian tradition would frame it the same way.</span></li>
+            <li><span className="role">Kingdom Significance (PSI)</span><span className="person">How visibly God&rsquo;s kingdom is advancing &mdash; the gospel spreading, the church growing, lives redeemed, prayer answered &mdash; held with sober discernment. It is never a prediction, a claim of fulfillment, or date-setting. A low score is normal for ordinary news and does not mean weak journalism.</span></li>
+            <li><span className="role">Source Credibility (SCI)</span><span className="person">How well the story&rsquo;s factual claims are sourced and checked &mdash; especially testimonies, healings, and miracles. This is about evidence only, and it is separate from the other lenses. When sourcing is thin, we say so plainly.</span></li>
+            <li><span className="role">Fruit &amp; Edification (HII)</span><span className="person">Whether the story strengthens faith and bears the fruit of the Spirit &mdash; mercy, reconciliation, and justice &mdash; giving glory to God rather than to people or platforms. A low score can simply mean the fruit is quiet or local, not that the reporting lacks compassion.</span></li>
           </ul>
 
           <h2>How to read a score</h2>
           <ul>
             <li>Read the four lenses together, not the total. The composite out of 40 is only a rough summary, shown second.</li>
             <li>Two stories can share the same total while being very different. The pattern across the four lenses matters more than the sum.</li>
-            <li>A high score does not mean a story is true, morally good, prophetically fulfilled, or endorsed by Discernt. A low score does not mean it is false or unimportant.</li>
+            <li>A high score does not mean a story is true, morally good, a settled move of God, or endorsed by Discernt. A low score does not mean it is false or unimportant.</li>
             <li>When Source Credibility is low, we show a sourcing notice. Please weigh the factual claims accordingly.</li>
             <li>Our editorial verification status is shown separately from the score. The two are not the same thing.</li>
           </ul>
