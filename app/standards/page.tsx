@@ -5,7 +5,7 @@ import Footer from '@/app/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Editorial Standards & Ethics · Discernt',
-  description: 'Discernt is a tool for discerning the news. Our editorial standards, ownership, independence, sourcing, ethics, and AI-use policy: fair and verifiable reporting, an openly stated lens, cited sourcing, human approval, and openly published scoring.',
+  description: 'Discernt is a tool for discerning the news. Our editorial standards, ownership, independence, sourcing, ethics, and AI-use policy: a mission to reveal — light in the darkness, a voice for the voiceless — an openly stated lens, cited sourcing, human approval, and openly published scoring.',
   alternates: { canonical: SITE_URL + '/standards' },
 };
 
@@ -22,8 +22,8 @@ export default function StandardsPage() {
           <h2>Our purpose</h2>
           <p>Discernt exists to help you discern the news, not to break it. The events we cover are reported first by other outlets. Our work is to read that coverage, write it up plainly, and weigh it through one consistent method, so you can interpret the news for yourself and decide what it means for your life. We are a layer of discernment over the news, not a competitor to the newsrooms that gather it. We build on their reporting, credit it, and link to it on every story.</p>
 
-          <h2>Fairness, and the lens we read through</h2>
-          <p>We work to remove bias as far as we can: we report what is verifiable, draw on several outlets, represent people charitably, separate reporting from narrative, and refuse partisan framing and outrage. We are also honest about the lens we interpret through — we are Christ-centered, and we say so rather than smuggling it in. A lens you can see is one you can weigh, and a tool for discernment that hid its own would be the very thing it warns against. Stating our lens is a commitment to fairness, not a license to abandon it: a story is reported accurately and its subjects treated justly whether or not they share our convictions.</p>
+          <h2>Our purpose, and the lens we read through</h2>
+          <p>Our work is to reveal: to shine a light in the darkness, expose what is hidden, give a voice to the voiceless, and point people to God. We report plainly, draw on several outlets, and refuse partisan spin and outrage. We are also honest about the lens we interpret through — we are Christ-centered, and we say so rather than smuggling it in. A lens you can see is one you can weigh, and a tool for discernment that hid its own would be the very thing it warns against. Stating our lens is a commitment to fairness, not a license to abandon it: a story is reported accurately and its subjects treated justly whether or not they share our convictions.</p>
 
           <h2>Ownership and funding</h2>
           <p>Discernt is owned and published by DOT ONE LLC, doing business as Dot One Media, a veteran-owned company based in Wasilla, Alaska. The newsroom is funded entirely by its parent company. It is free to read, carries no advertising, no sponsored content, and no paywall.</p>

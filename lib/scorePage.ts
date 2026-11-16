@@ -21,7 +21,7 @@ import { C, esc, page, header, footer, APP_STORE } from './chrome';
 // self-contained. Kept in the same order and wording as the app.
 const RUBRIC = [
   {
-    key: 'BAI', name: 'Scriptural Grounding', color: '#C79A2E',
+    key: 'SG', name: 'Scriptural Grounding', color: '#C79A2E',
     blurb: 'Illuminated by Scripture and consistent with the historic Christian faith, pointing to Christ rather than to spectacle.',
     indicators: [
       'Scriptural Consistency', 'Doctrinal Soundness', 'Christ-Centeredness',
@@ -29,7 +29,7 @@ const RUBRIC = [
     ],
   },
   {
-    key: 'PSI', name: 'Kingdom Significance', color: '#2F5A8F',
+    key: 'KS', name: 'Kingdom Significance', color: '#2F5A8F',
     blurb: 'How visibly God’s kingdom is advancing — gospel, revival, redemption, answered prayer — held with sober discernment, never date-setting.',
     indicators: [
       'Gospel Advance', 'Movement of God', 'Redemption & Transformation',
@@ -37,7 +37,7 @@ const RUBRIC = [
     ],
   },
   {
-    key: 'SCI', name: 'Source Credibility', color: '#6B7280',
+    key: 'SC', name: 'Source Credibility', color: '#6B7280',
     blurb: 'The journalistic and evidential strength of the account — testing claims, especially testimonies, healings, and miracles.',
     indicators: [
       'Primary-Source Access', 'Verification & Corroboration', 'Outlet Transparency',
@@ -45,7 +45,7 @@ const RUBRIC = [
     ],
   },
   {
-    key: 'HII', name: 'Fruit & Edification', color: '#3F7A5A',
+    key: 'FE', name: 'Fruit & Edification', color: '#3F7A5A',
     blurb: 'Whether the story strengthens faith and bears the fruit of the Spirit, giving glory to God rather than to people or platforms.',
     indicators: [
       'Faith Encouragement', 'Compassion & Mercy', 'Fruit of the Spirit',
@@ -386,7 +386,7 @@ export function renderScorePage(opts: {
               title: title,
               sourceUrl: url,
               scores: {
-                BAI: state.BAI, PSI: state.PSI, SCI: state.SCI, HII: state.HII
+                BAI: state.SG, PSI: state.KS, SCI: state.SC, HII: state.FE
               },
               website: honey
             }}})

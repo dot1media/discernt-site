@@ -451,11 +451,11 @@ export default async function SharePage({ params }: { params: { kind: string; id
             const notice = sciNotice(s.sci);
             const balance = profileBalance(s);
             const notes = s.indexNotes || {};
-            const LENS: { key: 'BAI'|'PSI'|'SCI'|'HII'; name: string; val: number; note?: string }[] = [
-              { key: 'BAI', name: 'Biblical Alignment', val: s.bai, note: notes.BAI },
-              { key: 'PSI', name: 'Prophetic Significance', val: s.psi, note: notes.PSI },
-              { key: 'SCI', name: 'Source Credibility', val: s.sci, note: notes.SCI },
-              { key: 'HII', name: 'Humanities Impact', val: s.hii, note: notes.HII },
+            const LENS: { key: 'SG'|'KS'|'SC'|'FE'; name: string; val: number; note?: string }[] = [
+              { key: 'SG', name: 'Scriptural Grounding', val: s.bai, note: notes.BAI },
+              { key: 'KS', name: 'Kingdom Significance', val: s.psi, note: notes.PSI },
+              { key: 'SC', name: 'Source Credibility', val: s.sci, note: notes.SCI },
+              { key: 'FE', name: 'Fruit & Edification', val: s.hii, note: notes.HII },
             ];
             return (
             <div className="scorecard">

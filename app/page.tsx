@@ -163,10 +163,10 @@ export default async function Home() {
                   <div className="ls-detail">
                     <div className="ls-label">D1&#8209;4LS · Four&#8209;Lens Assessment</div>
                     <div className="ls-bars">
-                      <span title="Scriptural Grounding">BAI {lead.score.bai}<i>/10</i></span>
-                      <span title="Kingdom Significance">PSI {lead.score.psi}<i>/10</i></span>
-                      <span title="Source Credibility">SCI {lead.score.sci}<i>/10</i></span>
-                      <span title="Fruit &amp; Edification">HII {lead.score.hii}<i>/10</i></span>
+                      <span title="Scriptural Grounding">SG {lead.score.bai}<i>/10</i></span>
+                      <span title="Kingdom Significance">KS {lead.score.psi}<i>/10</i></span>
+                      <span title="Source Credibility">SC {lead.score.sci}<i>/10</i></span>
+                      <span title="Fruit &amp; Edification">FE {lead.score.hii}<i>/10</i></span>
                     </div>
                     <div className="ls-sub">Composite {lead.score.overall}/40 · {compositeBand(lead.score.overall).label}{lead.score.confidence ? ` · ${lead.score.confidence} confidence` : ''}</div>
                   </div>

@@ -64,7 +64,7 @@ function clamp(v: unknown): number {
 // the app and the Score-a-Story tool use, in the same order. Kept here so the
 // per-indicator breakdown reads identically everywhere it is shown.
 export interface IndexBreakdown {
-  key: 'BAI' | 'PSI' | 'SCI' | 'HII';
+  key: 'SG' | 'KS' | 'SC' | 'FE';
   name: string;
   color: string;
   total: number; // 0-10
@@ -72,28 +72,28 @@ export interface IndexBreakdown {
 }
 
 const BREAKDOWN_DEF: { key: IndexBreakdown['key']; name: string; color: string; items: [string, string][] }[] = [
-  { key: 'BAI', name: 'Scriptural Grounding', color: '#C79A2E', items: [
+  { key: 'SG', name: 'Scriptural Grounding', color: '#C79A2E', items: [
     ['Scriptural Consistency', 'bai_scriptural_consistency'],
     ['Doctrinal Soundness', 'bai_doctrinal_integrity'],
     ['Christ-Centeredness', 'bai_moral_framework'],
     ['Image-Bearer Dignity', 'bai_anthropology'],
     ['Hope & Purpose', 'bai_teleology'],
   ] },
-  { key: 'PSI', name: 'Kingdom Significance', color: '#2F5A8F', items: [
+  { key: 'KS', name: 'Kingdom Significance', color: '#2F5A8F', items: [
     ['Gospel Advance', 'psi_textual_linkage'],
     ['Movement of God', 'psi_eschatological_fit'],
     ['Redemption & Transformation', 'psi_historical_continuity'],
     ['Answered Prayer', 'psi_spiritual_impact'],
     ['Discernment & Restraint', 'psi_theological_restraint'],
   ] },
-  { key: 'SCI', name: 'Source Credibility', color: '#6B7280', items: [
+  { key: 'SC', name: 'Source Credibility', color: '#6B7280', items: [
     ['Primary-Source Access', 'sci_primary_source_access'],
     ['Verification & Corroboration', 'sci_verification'],
     ['Outlet Transparency', 'sci_transparency'],
     ['Track Record', 'sci_track_record'],
     ['Editorial Standards', 'sci_editorial_standards'],
   ] },
-  { key: 'HII', name: 'Fruit & Edification', color: '#3F7A5A', items: [
+  { key: 'FE', name: 'Fruit & Edification', color: '#3F7A5A', items: [
     ['Faith Encouragement', 'hii_human_dignity'],
     ['Compassion & Mercy', 'hii_compassion_empathy'],
     ['Fruit of the Spirit', 'hii_societal_impact'],

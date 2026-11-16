@@ -17,8 +17,8 @@ interface Props { bai: number; psi: number; sci: number; hii: number; }
 interface Lens { key: string; name: string; val: number; color: string; }
 
 const CX = 110, CY = 110, R = 84;
-// BAI top, PSI right, SCI bottom, HII left.
-const ANGLES: Record<string, number> = { BAI: -90, PSI: 0, SCI: 90, HII: 180 };
+// SG top, KS right, SC bottom, FE left.
+const ANGLES: Record<string, number> = { SG: -90, KS: 0, SC: 90, FE: 180 };
 
 function pt(key: string, value: number): [number, number] {
   const a = (ANGLES[key] * Math.PI) / 180;
@@ -53,7 +53,7 @@ export default function ScoreViews({ bai, psi, sci, hii }: Props) {
     { key: 'FE', name: 'Fruit & Edification', val: hii, color: '#3F7A5A' },
   ];
 
-  const order = ['BAI', 'PSI', 'SCI', 'HII'];
+  const order = ['SG', 'KS', 'SC', 'FE'];
   const dataPoints = order.map((k) => pt(k, lenses.find((l) => l.key === k)!.val));
   const polyPoints = dataPoints.map(([x, y]) => `${x.toFixed(1)},${y.toFixed(1)}`).join(' ');
 
