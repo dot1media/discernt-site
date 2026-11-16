@@ -8,7 +8,7 @@ export const C = {
   paper: '#F8F5EF',
   page: '#EFEAE0',
   ink: '#1B1917',
-  red: '#B81616',
+  red: '#8A6A17',
   gold: '#D4AF37',
   goldText: '#8A6A17',
   muted: '#767065',

@@ -18,10 +18,10 @@ export const dynamic = 'force-dynamic';
 // shared Open Graph/Twitter defaults; this sets the indexable title, the
 // description, and the canonical.
 export const metadata: Metadata = {
-  title: 'Dot 1 News — Alaska News, Daily | Wasilla',
+  title: 'Discernt — Interpreting the Times',
   description: 'A daily edition of Alaska and national news from Wasilla: a few stories, each with the reason it ran, scored across four measures. Veteran-owned and faith-driven.',
   alternates: { canonical: SITE_URL + '/' },
-  keywords: ['Alaska news', 'Wasilla news', 'Mat-Su news', 'Christian news', 'faith-based news', 'daily news digest', 'Dot 1 News'],
+  keywords: ['Alaska news', 'Wasilla news', 'Mat-Su news', 'Christian news', 'faith-based news', 'daily news digest', 'Discernt'],
 };
 
 interface ReaderItem {
@@ -139,8 +139,8 @@ export default async function Home() {
       <Header />
 
       <div className="masthead"><div className="in">
-        <h1>DOT&nbsp;<NewsLogo h="1.15em" />&nbsp;NEWS</h1>
-        <div className="tag">A declared standpoint. Interpreting the times.</div>
+        <h1><NewsLogo h="1.05em" />&nbsp;DISCERNT</h1>
+        <div className="tag">Interpreting the times.</div>
       </div></div>
       <div className="dateline">
         <span>{alaskaDate()}</span>
@@ -251,7 +251,7 @@ export default async function Home() {
             <h3>Carry the edition with you.</h3>
             <p>The app brings each day&rsquo;s chosen stories to your phone, with the reason every one of them ran, and an edition that ends on purpose. Free on the App Store.</p>
           </div>
-          <a className="btn" href={APP_STORE}>Get Dot 1 News &rsaquo;</a>
+          <a className="btn" href={APP_STORE}>Get Discernt &rsaquo;</a>
         </section>
       </main>
 

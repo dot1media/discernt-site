@@ -4,8 +4,8 @@ import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'The Four-Lens Assessment (D1-4LS) · Dot 1 News',
-  description: 'How Dot 1 News assesses stories across four lenses: biblical alignment, prophetic relevance, source credibility, and human impact. An experimental framework still being tested, and your feedback is welcome.',
+  title: 'The Four-Lens Assessment (D1-4LS) · Discernt',
+  description: 'How Discernt assesses stories across four lenses: biblical alignment, prophetic relevance, source credibility, and human impact. An experimental framework still being tested, and your feedback is welcome.',
   alternates: { canonical: SITE_URL + '/d1-4ls' },
 };
 
@@ -36,7 +36,7 @@ export default function D14LSPage() {
           <ul>
             <li>Read the four lenses together, not the total. The composite out of 40 is only a rough summary, shown second.</li>
             <li>Two stories can share the same total while being very different. The pattern across the four lenses matters more than the sum.</li>
-            <li>A high score does not mean a story is true, morally good, prophetically fulfilled, or endorsed by Dot 1 News. A low score does not mean it is false or unimportant.</li>
+            <li>A high score does not mean a story is true, morally good, prophetically fulfilled, or endorsed by Discernt. A low score does not mean it is false or unimportant.</li>
             <li>When Source Credibility is low, we show a sourcing notice. Please weigh the factual claims accordingly.</li>
             <li>Our editorial verification status is shown separately from the score. The two are not the same thing.</li>
           </ul>

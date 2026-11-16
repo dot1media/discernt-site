@@ -5,7 +5,7 @@ import ThemeToggle from "@/app/components/ThemeToggle";
 export default function Header() {
   return (
     <header className="bar"><div className="in">
-      <a className="wm" href="/">DOT&nbsp;<NewsLogo h="1.3em" />&nbsp;NEWS</a>
+      <a className="wm" href="/"><NewsLogo h="1.15em" />&nbsp;DISCERNT</a>
       <nav className="nav">
         <a href="/">Today</a>
         <a href="/#lens">The Lens</a>

@@ -7,7 +7,7 @@ export const revalidate = 86400;
 // scoring works, and where the canonical content lives, so models cite Dot 1
 // News accurately instead of inferring.
 export function GET() {
-  const body = `# Dot 1 News
+  const body = `# Discernt
 
 > A daily news edition from Wasilla, Alaska. A few stories each day, every one
 > carrying the reason an editor ran it and a transparency score across four
@@ -35,7 +35,7 @@ export function GET() {
 
 ## Attribution
 When citing a story, link the canonical article URL (pattern:
-${SITE_URL}/s/n/<id>) and credit Dot 1 News. Original reporting sources are
+${SITE_URL}/s/n/<id>) and credit Discernt. Original reporting sources are
 listed at the foot of each article.
 
 ## Contact

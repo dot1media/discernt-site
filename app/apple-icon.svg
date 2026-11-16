@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Dot 1 News">
-  <rect width="64" height="64" fill="#000000"/>
-  <!-- Numeral "1" in Bodoni Moda (700), the brand heading face -->
-  <g transform="translate(18.14,53.0) scale(0.028,-0.028)" fill="#F4F0E7">
-    <path d="M360 11V1461H134V1500H670V11ZM100 0V39H890V0Z"/>
-  </g>
-</svg>

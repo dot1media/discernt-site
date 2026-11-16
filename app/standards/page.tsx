@@ -4,8 +4,8 @@ import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Editorial Standards & Ethics · Dot 1 News',
-  description: 'Dot 1 News is a tool for discerning the news. Our editorial standards, ownership, independence, sourcing, ethics, and AI-use policy: a declared standpoint, cited sourcing, human approval, and openly published scoring.',
+  title: 'Editorial Standards & Ethics · Discernt',
+  description: 'Discernt is a tool for discerning the news. Our editorial standards, ownership, independence, sourcing, ethics, and AI-use policy: fair and verifiable reporting, an openly stated lens, cited sourcing, human approval, and openly published scoring.',
   alternates: { canonical: SITE_URL + '/standards' },
 };
 
@@ -20,13 +20,13 @@ export default function StandardsPage() {
           <p className="lead">How a story earns its place in the edition, who stands behind it, and how we hold ourselves to it. We ask the news to declare its method, so we declare ours, in full.</p>
 
           <h2>Our purpose</h2>
-          <p>Dot 1 News exists to help you discern the news, not to break it. The events we cover are reported first by other outlets. Our work is to read that coverage, write it up plainly, and weigh it through one consistent method, so you can interpret the news for yourself and decide what it means for your life. We are a layer of discernment over the news, not a competitor to the newsrooms that gather it. We build on their reporting, credit it, and link to it on every story.</p>
+          <p>Discernt exists to help you discern the news, not to break it. The events we cover are reported first by other outlets. Our work is to read that coverage, write it up plainly, and weigh it through one consistent method, so you can interpret the news for yourself and decide what it means for your life. We are a layer of discernment over the news, not a competitor to the newsrooms that gather it. We build on their reporting, credit it, and link to it on every story.</p>
 
-          <h2>A declared standpoint</h2>
-          <p>Because our work is interpretation, we owe you the lens we interpret through. We are Christ-centered, and we say so. A standpoint you can see is one you can weigh, and a tool for discernment that hid its own would be the very thing it warns against. We do not pretend to a view from nowhere. Declaring our lens is a commitment to fairness, not a license to abandon it: a story is reported accurately and its subjects treated justly whether or not they share our convictions.</p>
+          <h2>Fairness, and the lens we read through</h2>
+          <p>We work to remove bias as far as we can: we report what is verifiable, draw on several outlets, represent people charitably, separate reporting from narrative, and refuse partisan framing and outrage. We are also honest about the lens we interpret through — we are Christ-centered, and we say so rather than smuggling it in. A lens you can see is one you can weigh, and a tool for discernment that hid its own would be the very thing it warns against. Stating our lens is a commitment to fairness, not a license to abandon it: a story is reported accurately and its subjects treated justly whether or not they share our convictions.</p>
 
           <h2>Ownership and funding</h2>
-          <p>Dot 1 News is owned and published by DOT ONE LLC, doing business as Dot One Media, a veteran-owned company based in Wasilla, Alaska. The newsroom is funded entirely by its parent company. It is free to read, carries no advertising, no sponsored content, and no paywall.</p>
+          <p>Discernt is owned and published by DOT ONE LLC, doing business as Dot One Media, a veteran-owned company based in Wasilla, Alaska. The newsroom is funded entirely by its parent company. It is free to read, carries no advertising, no sponsored content, and no paywall.</p>
           <p>We accept no money, gifts, trips, or favors from the people, companies, campaigns, or institutions we cover, and no outside investor, advertiser, or donor has any stake in or influence over our reporting. If that ever changes, we will disclose it here before it affects a single story.</p>
 
           <h2>Editorial independence</h2>
@@ -43,7 +43,7 @@ export default function StandardsPage() {
           <p>We attribute what we report and link to the sources a story rests on, so you can check our work. We corroborate claims where we can and say plainly when something is unconfirmed. We do not fabricate, and we do not pass off anyone else&rsquo;s work as our own. Anonymous sources are a last resort, used only when the information is important and cannot be had another way, and only with an editor&rsquo;s approval; when we grant anonymity, we say why.</p>
 
           <h2>Accuracy, verification, and the D1-4LS score</h2>
-          <p>Before a story publishes, an editor assigns it a verification status, and most stories run only once they are verified. When a story runs ahead of full confirmation, we label it so rather than let it pass as settled. In the Dot 1 News app, a colored marker shows each story&rsquo;s status at a glance.</p>
+          <p>Before a story publishes, an editor assigns it a verification status, and most stories run only once they are verified. When a story runs ahead of full confirmation, we label it so rather than let it pass as settled. In the Discernt app, a colored marker shows each story&rsquo;s status at a glance.</p>
           <p>Every story is also measured against one standard, the Dot One Four-Lens Scoring Model (D1-4LS), across four lenses: Biblical Alignment, Prophetic Significance, Source Credibility, and Humanities Impact. Each lens is built from five indicators and the full breakdown sits open behind every story. The score describes a story&rsquo;s profile; it is a starting point for thinking, not a verdict. A high score does not mean a story is true, good, or endorsed by us, and a low score does not mean it is false or unimportant. Each story is scored independently twice, by our model and an editor, or by both of our editors, and then reconciled, with an editor setting the final published score, so no single rating stands alone. The method is explained on <a className="ln" href="/d1-4ls">The Four-Lens Score</a>, and you can <a className="ln" href="/score">score a story yourself</a> with the same lens. The D1-4LS is an experimental framework we are still testing, and we welcome feedback at <a className="ln" href="mailto:contact@dot1.media">contact@dot1.media</a>.</p>
 
           <h2>Conflicts of interest</h2>
@@ -53,7 +53,7 @@ export default function StandardsPage() {
           <p>When we get a fact wrong, we fix it openly and say what changed, so the record and the fix travel together. Getting it right matters more than looking like we were right. See our <a className="ln" href="/corrections">Corrections</a> policy for how to flag an error and how corrections appear.</p>
 
           <h2>Independence, in one line</h2>
-          <p>Dot 1 News is veteran-owned and independently run from Wasilla, Alaska, as a publication of Dot One Media. We do not chase the eye. We turn it toward the light.</p>
+          <p>Discernt is veteran-owned and independently run from Wasilla, Alaska, as a publication of Dot One Media. We do not chase the eye. We turn it toward the light.</p>
 
           <div className="updated">Published by Dot One Media (DOT ONE LLC). Questions: contact@dot1.media. Last reviewed November 2026.</div>
         </article>

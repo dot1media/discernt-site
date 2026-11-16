@@ -14,7 +14,7 @@ const aboutGraph = {
       '@type': 'AboutPage',
       '@id': `${SITE_URL}/about#page`,
       url: `${SITE_URL}/about`,
-      name: 'About Dot 1 News',
+      name: 'About Discernt',
       about: { '@id': `${SITE_URL}/#organization` },
       isPartOf: { '@id': `${SITE_URL}/#website` },
     },
@@ -22,8 +22,8 @@ const aboutGraph = {
 };
 
 export const metadata: Metadata = {
-  title: 'About & Masthead · Dot 1 News',
-  description: 'Dot 1 News is a tool for discerning the news, not another outlet racing to break it. A veteran-owned, faith-driven publication of Dot One Media in Wasilla, Alaska. Who we are and who runs it.',
+  title: 'About & Masthead · Discernt',
+  description: 'Discernt is a tool for discerning the news, not another outlet racing to break it. A veteran-owned, faith-driven publication of Dot One Media in Wasilla, Alaska. Who we are and who runs it.',
   alternates: { canonical: SITE_URL + '/about' },
 };
 
@@ -35,8 +35,8 @@ export default function AboutPage() {
       <main className="shell">
         <article className="docpage">
           <div className="kicker">About</div>
-          <h1>About Dot 1 News</h1>
-          <p className="lead">Dot 1 News is a tool for discerning the news, not another outlet racing to break it. We take the events other outlets report, write them up plainly, and weigh them through a method you can see, so you can interpret the news for yourself and decide what it means for your life.</p>
+          <h1>About Discernt</h1>
+          <p className="lead">Discernt is a tool for discerning the news, not another outlet racing to break it. We take the events other outlets report, write them up plainly, and weigh them through a method you can see, so you can interpret the news for yourself and decide what it means for your life.</p>
 
           <h2>Why we exist</h2>
           <p>The world is not short on news. It is drowning in it. The same event is reported by a dozen outlets, each through its own lens, and you are left to sort truth from spin and noise from significance on your own, usually with no time and no tools. That is the work we exist to help with. We are not here to add one more voice to the pile. We are here to help you read the pile.</p>
@@ -63,7 +63,7 @@ export default function AboutPage() {
           </ul>
 
           <h2>Ownership &amp; funding</h2>
-          <p>Dot 1 News is owned and published by DOT ONE LLC, doing business as Dot One Media, a veteran-owned company based in Wasilla, Alaska. The newsroom is funded by its parent company. It is free to read, carries no advertising, no sponsored content, and no paywall, and it takes no money from any person or interest it covers. No outside investor, advertiser, or donor has any say in what we publish.</p>
+          <p>Discernt is owned and published by DOT ONE LLC, doing business as Dot One Media, a veteran-owned company based in Wasilla, Alaska. The newsroom is funded by its parent company. It is free to read, carries no advertising, no sponsored content, and no paywall, and it takes no money from any person or interest it covers. No outside investor, advertiser, or donor has any say in what we publish.</p>
 
           <h2>Contact</h2>
           <p>General inquiries and story tips: <a className="ln" href="mailto:contact@dot1.media">contact@dot1.media</a>. For help with the app or the site: <a className="ln" href="mailto:support@dot1.media">support@dot1.media</a>. To request a correction, see our <a className="ln" href="/corrections">Corrections</a> page.</p>

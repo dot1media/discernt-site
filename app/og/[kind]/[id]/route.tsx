@@ -34,7 +34,7 @@ export async function GET(_req: Request, { params }: { params: { kind: string; i
       </div>
     ) : (
       <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#141210', color: '#f4f0e7', fontSize: 84, fontFamily: 'serif', letterSpacing: 6 }}>
-        DOT 1 NEWS
+        DISCERNT
       </div>
     ),
     { width: 1200, height: 630, headers: { 'Cache-Control': 'public, max-age=3600, s-maxage=86400' } },

@@ -14,7 +14,7 @@ export const C = {
   paper: '#F8F5EF',
   page: '#EFEAE0',
   ink: '#1B1917',
-  red: '#B81616',
+  red: '#8A6A17',
   gold: '#D4AF37',
   goldText: '#8A6A17',
   muted: '#767065',
@@ -112,15 +112,15 @@ img{max-width:100%;display:block;}
   .legal .in{padding:18px 18px 30px;flex-direction:column;gap:8px;}
 }`;
 
-// The Dot 1 News mark (animated globe in the "1"), matching the React <NewsLogo>.
-// Static PNG shown when reduced motion is preferred.
+// The Discernt emblem (metallic aperture-globe mark), matching the React
+// <NewsLogo>. Sized to the surrounding nameplate via em.
 function mark(h: string): string {
-  return `<picture aria-label="1" role="img" style="display:inline-block;height:${h};vertical-align:-0.22em;line-height:0;margin:0 0.02em"><source srcset="/news-logo.png" media="(prefers-reduced-motion: reduce)"><img src="/news-logo.gif" alt="1" style="height:100%;width:auto;display:block"></picture>`;
+  return `<img src="/discernt-emblem.png" alt="Discernt" style="display:inline-block;height:${h};width:auto;vertical-align:-0.22em;margin:0 0.04em">`;
 }
 
 export function header(): string {
   return `<header class="bar"><div class="in">
-    <a class="wm" href="/">DOT&nbsp;${mark('1.3em')}&nbsp;NEWS</a>
+    <a class="wm" href="/">${mark('1.15em')}&nbsp;DISCERNT</a>
     <nav class="nav">
       <a href="/">Today</a>
       <a href="/#lens">The Lens</a>
@@ -135,8 +135,8 @@ export function header(): string {
 
 export function masthead(dateLabel: string, countLabel: string): string {
   return `<div class="masthead"><div class="in">
-      <h1>DOT&nbsp;${mark('1.15em')}&nbsp;NEWS</h1>
-      <div class="tag">A declared standpoint, not a hidden one.</div>
+      <h1>${mark('1.05em')}&nbsp;DISCERNT</h1>
+      <div class="tag">Interpreting the times.</div>
     </div></div>
     <div class="dateline">
       <span>${esc(dateLabel)}</span>
@@ -148,8 +148,8 @@ export function footer(): string {
   const year = new Date().getFullYear();
   return `<footer class="foot"><div class="in">
       <div>
-        <div class="wm">DOT&nbsp;${mark('1.3em')}&nbsp;NEWS</div>
-        <div class="motto">A declared standpoint, not a hidden one.</div>
+        <div class="wm">${mark('1.15em')}&nbsp;DISCERNT</div>
+        <div class="motto">Interpreting the times.</div>
         <p class="blurb">A few stories each day, each with the reason it ran, and an edition that ends on purpose. A veteran-owned, faith-driven newsroom in Wasilla, Alaska.</p>
       </div>
       <div>
@@ -196,7 +196,7 @@ export function page(opts: {
 <title>${esc(opts.title)}</title>
 <meta name="description" content="${esc(opts.desc)}">
 <link rel="canonical" href="${esc(opts.url)}">
-<meta property="og:site_name" content="Dot 1 News">
+<meta property="og:site_name" content="Discernt">
 <meta property="og:type" content="${opts.ogType || 'website'}">
 <meta property="og:title" content="${esc(opts.title)}">
 <meta property="og:description" content="${esc(opts.desc)}">

@@ -2,7 +2,7 @@ import { neon } from '@neondatabase/serverless';
 import type { NeonQueryFunction } from '@neondatabase/serverless';
 
 /**
- * Database layer — the SAME Neon Postgres the Dot 1 News app writes to.
+ * Database layer — the SAME Neon Postgres the Discernt app writes to.
  *
  * This is what makes the separated site stay in sync with the app: both
  * point DATABASE_URL at the same pooled Neon connection string, so the
@@ -26,7 +26,7 @@ function resolveDatabaseUrl(): string {
   if (!url) {
     throw new Error(
       'DATABASE_URL is not configured. Add the pooled Neon connection string ' +
-      '(the same one the Dot 1 News app uses) to this project\u2019s Vercel ' +
+      '(the same one the Discernt app uses) to this project\u2019s Vercel ' +
       'environment variables, then redeploy. See .env.example.',
     );
   }

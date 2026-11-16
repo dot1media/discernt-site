@@ -4,7 +4,7 @@ import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'How to Read the News · Dot 1 News',
+  title: 'How to Read the News · Discernt',
   description: 'A reader’s guide to discernment. Four questions to ask of any news story, from any outlet, so you can weigh what you read and decide what it means for your life.',
   alternates: { canonical: SITE_URL + '/discernment' },
 };
@@ -42,11 +42,11 @@ export default function DiscernmentPage() {
 
           <div className="callout" style={{ marginTop: 32 }}>
             <h3>Carry the practice with you.</h3>
-            <p>The Dot 1 News app brings a few chosen stories a day, each drawn from several outlets and weighed through the four lenses, with the reason it ran.</p>
-            <a className="btn" href={APP_STORE}>Get Dot 1 News &rsaquo;</a>
+            <p>The Discernt app brings a few chosen stories a day, each drawn from several outlets and weighed through the four lenses, with the reason it ran.</p>
+            <a className="btn" href={APP_STORE}>Get Discernt &rsaquo;</a>
           </div>
 
-          <div className="updated">Dot One Media, Wasilla, Alaska. A declared standpoint. Interpreting the times.</div>
+          <div className="updated">Dot One Media, Wasilla, Alaska. Interpreting the times.</div>
         </article>
       </main>
       <Footer />

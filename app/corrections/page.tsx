@@ -4,8 +4,8 @@ import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Corrections · Dot 1 News',
-  description: 'How Dot 1 News corrects the record: our commitment to fixing errors openly and promptly, and how to request a correction.',
+  title: 'Corrections · Discernt',
+  description: 'How Discernt corrects the record: our commitment to fixing errors openly and promptly, and how to request a correction.',
   alternates: { canonical: SITE_URL + '/corrections' },
 };
 

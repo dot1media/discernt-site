@@ -16,12 +16,12 @@ const mono = IBM_Plex_Mono({ subsets: ['latin'], weight: ['400', '500', '600'], 
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: 'Dot 1 News \u2014 A Declared Standpoint',
-  description: 'Dot 1 News is a tool for discerning the news, not another outlet racing to break it. A few stories a day, each drawn from several outlets and weighed through four lenses, from a veteran-owned, faith-driven publication in Wasilla, Alaska.',
-  applicationName: 'Dot 1 News',
-  appleWebApp: { capable: true, title: 'Dot 1 News' },
+  title: 'Discernt \u2014 Interpreting the Times',
+  description: 'Discernt brings believers true stories of God at work across the world: faith and hope, redemption in Christ, answered prayer, and the gospel advancing among every people, each weighed with discernment through the D1-4LS v3.0 lenses. A veteran-owned, faith-driven publication in Wasilla, Alaska.',
+  applicationName: 'Discernt',
+  appleWebApp: { capable: true, title: 'Discernt' },
   openGraph: {
-    siteName: 'Dot 1 News',
+    siteName: 'Discernt',
     type: 'website',
     url: SITE_URL,
   },
@@ -41,7 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script dangerouslySetInnerHTML={{ __html: `(function(){try{var t=localStorage.getItem('d1-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();` }} />
         {children}
 
-        {/* First-visit welcome: what Dot 1 News is, shown once per browser. */}
+        {/* First-visit welcome: what Discernt is, shown once per browser. */}
         <IntroModal />
 
         {/* Google Analytics 4 — active once NEXT_PUBLIC_GA_ID is set. */}

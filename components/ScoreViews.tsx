@@ -47,10 +47,10 @@ export default function ScoreViews({ bai, psi, sci, hii }: Props) {
   };
 
   const lenses: Lens[] = [
-    { key: 'BAI', name: 'Biblical Alignment', val: bai, color: '#B81616' },
-    { key: 'PSI', name: 'Prophetic Significance', val: psi, color: '#8A6A17' },
-    { key: 'SCI', name: 'Source Credibility', val: sci, color: '#1B6B5A' },
-    { key: 'HII', name: 'Humanities Impact', val: hii, color: '#2A4A7F' },
+    { key: 'SG', name: 'Scriptural Grounding', val: bai, color: '#C79A2E' },
+    { key: 'KS', name: 'Kingdom Significance', val: psi, color: '#2F5A8F' },
+    { key: 'SC', name: 'Source Credibility', val: sci, color: '#6B7280' },
+    { key: 'FE', name: 'Fruit & Edification', val: hii, color: '#3F7A5A' },
   ];
 
   const order = ['BAI', 'PSI', 'SCI', 'HII'];
@@ -62,7 +62,7 @@ export default function ScoreViews({ bai, psi, sci, hii }: Props) {
       {/* Always expose every lens score to assistive tech, in any view: the radar
           and rings draw the numbers as SVG, which screen readers skip. */}
       <p className="sv-sr">
-        Four-lens scores, each out of 10. Biblical Alignment {bai}. Prophetic Significance {psi}. Source Credibility {sci}. Humanities Impact {hii}.
+        Four-lens scores, each out of 10. Scriptural Grounding {bai}. Kingdom Significance {psi}. Source Credibility {sci}. Fruit and Edification {hii}.
       </p>
       <div className="sv-toggle" role="tablist" aria-label="Score view">
         {(['bars', 'radar', 'rings'] as View[]).map((v) => (
@@ -106,7 +106,7 @@ export default function ScoreViews({ bai, psi, sci, hii }: Props) {
               const [x, y] = axisPt(k, 1);
               return <line key={k} x1={CX} y1={CY} x2={x} y2={y} stroke="var(--rule2)" strokeWidth={1} />;
             })}
-            <polygon points={polyPoints} fill="rgba(184,22,22,0.16)" stroke="#B81616" strokeWidth={2} strokeLinejoin="round" />
+            <polygon points={polyPoints} fill="rgba(199,154,46,0.16)" stroke="#C79A2E" strokeWidth={2} strokeLinejoin="round" />
             {order.map((k) => {
               const l = lenses.find((x) => x.key === k)!;
               const [x, y] = pt(k, l.val);

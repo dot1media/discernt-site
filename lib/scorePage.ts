@@ -21,35 +21,35 @@ import { C, esc, page, header, footer, APP_STORE } from './chrome';
 // self-contained. Kept in the same order and wording as the app.
 const RUBRIC = [
   {
-    key: 'BAI', name: 'Biblical Alignment', color: '#B81616',
-    blurb: 'Worldview coherence with biblical ontology, ethics, and anthropology.',
+    key: 'BAI', name: 'Scriptural Grounding', color: '#C79A2E',
+    blurb: 'Illuminated by Scripture and consistent with the historic Christian faith, pointing to Christ rather than to spectacle.',
     indicators: [
-      'Scriptural Consistency', 'Doctrinal Integrity', 'Moral Framework',
-      'Anthropology', 'Teleology',
+      'Scriptural Consistency', 'Doctrinal Soundness', 'Christ-Centeredness',
+      'Image-Bearer Dignity', 'Hope & Purpose',
     ],
   },
   {
-    key: 'PSI', name: 'Prophetic Significance', color: '#8A6A17',
-    blurb: 'Prophetic relevance without date-setting or speculation.',
+    key: 'PSI', name: 'Kingdom Significance', color: '#2F5A8F',
+    blurb: 'How visibly God’s kingdom is advancing — gospel, revival, redemption, answered prayer — held with sober discernment, never date-setting.',
     indicators: [
-      'Textual Linkage', 'Eschatological Category Fit', 'Historical Pattern Continuity',
-      'Spiritual Discernment Impact', 'Theological Restraint',
+      'Gospel Advance', 'Movement of God', 'Redemption & Transformation',
+      'Answered Prayer', 'Discernment & Restraint',
     ],
   },
   {
-    key: 'SCI', name: 'Source Credibility', color: '#1B6B5A',
-    blurb: 'Journalistic rigor: verifiable, transparent sourcing.',
+    key: 'SCI', name: 'Source Credibility', color: '#6B7280',
+    blurb: 'The journalistic and evidential strength of the account — testing claims, especially testimonies, healings, and miracles.',
     indicators: [
-      'Primary Source Access', 'Verification & Corroboration', 'Transparency & Accountability',
-      'Track Record Accuracy', 'Editorial Standards',
+      'Primary-Source Access', 'Verification & Corroboration', 'Outlet Transparency',
+      'Track Record', 'Editorial Standards',
     ],
   },
   {
-    key: 'HII', name: 'Humanities Impact', color: '#2A4A7F',
-    blurb: 'Human consequence: dignity, compassion, Christ-modeled care.',
+    key: 'HII', name: 'Fruit & Edification', color: '#3F7A5A',
+    blurb: 'Whether the story strengthens faith and bears the fruit of the Spirit, giving glory to God rather than to people or platforms.',
     indicators: [
-      'Human Dignity Recognition', 'Compassion & Empathy', 'Societal Impact Scope',
-      'Justice & Responsibility', 'Christ-Modeled Care Orientation',
+      'Faith Encouragement', 'Compassion & Mercy', 'Fruit of the Spirit',
+      'Justice & Righteousness', 'Glory to God',
     ],
   },
 ];
@@ -165,7 +165,7 @@ export function renderScorePage(opts: {
       <section class="hero">
         <div class="kicker">Score a Story</div>
         <h1>Read the news the way we do.</h1>
-        <p>Paste any headline you have seen today and score it yourself across the four measures behind Dot 1 News. It takes a minute, the math is yours, and you can share the result. This is the same lens our editors use, in your hands.</p>
+        <p>Paste any headline you have seen today and score it yourself across the four measures behind Discernt. It takes a minute, the math is yours, and you can share the result. This is the same lens our editors use, in your hands.</p>
       </section>
 
       <section class="tool">
@@ -211,7 +211,7 @@ export function renderScorePage(opts: {
 
       <section class="explain">
         <h3>What the four measures mean</h3>
-        <p>Dot 1 News scores every story it runs across four indices, each built from five indicators rated zero, one, or two. It is not a verdict on whether a story is good. It is a way of making the reasoning visible instead of hidden.</p>
+        <p>Discernt scores every story it runs across four indices, each built from five indicators rated zero, one, or two. It is not a verdict on whether a story is good. It is a way of making the reasoning visible instead of hidden.</p>
         ${explainRows}
         <p style="margin-top:16px;">A high composite does not mean a story is true, and a low one does not mean it is false. The number is a starting point for thinking, not a substitute for it.</p>
       </section>
@@ -219,7 +219,7 @@ export function renderScorePage(opts: {
       <section class="appcta">
         <h3>See it done by an editor.</h3>
         <p>In the app, every story arrives already scored across these four measures, with the reason it ran. Score along, or just read what a person chose for you today.</p>
-        <a class="btn red" href="${esc(APP_STORE)}">Get Dot 1 News free &rsaquo;</a>
+        <a class="btn red" href="${esc(APP_STORE)}">Get Discernt free &rsaquo;</a>
       </section>
     </main>
     ${footer()}
@@ -355,8 +355,8 @@ export function renderScorePage(opts: {
       document.getElementById('shareBtn').addEventListener('click', function(){
         var url = buildShareUrl();
         var title = document.getElementById('storyTitle').value.trim();
-        var text = (title ? 'I scored "'+title+'" ' : 'I scored a story ') + 'on Dot 1 News: '+composite().toFixed(1)+'/10';
-        if (navigator.share) { navigator.share({ title:'My Dot 1 News scorecard', text:text, url:url }).catch(function(){}); }
+        var text = (title ? 'I scored "'+title+'" ' : 'I scored a story ') + 'on Discernt: '+composite().toFixed(1)+'/10';
+        if (navigator.share) { navigator.share({ title:'My Discernt scorecard', text:text, url:url }).catch(function(){}); }
         else if (navigator.clipboard) { navigator.clipboard.writeText(url).then(flashCopied); }
         else { prompt('Copy this link:', url); }
       });
@@ -408,8 +408,8 @@ export function renderScorePage(opts: {
     </script>`;
 
   return page({
-    title: 'Score a Story \u00b7 Dot 1 News',
-    desc: 'Paste any headline and score it yourself across the four measures behind Dot 1 News. The same lens our editors use, in your hands.',
+    title: 'Score a Story \u00b7 Discernt',
+    desc: 'Paste any headline and score it yourself across the four measures behind Discernt. The same lens our editors use, in your hands.',
     url: opts.url,
     ogType: 'website',
     extraCss: CSS,
@@ -431,7 +431,7 @@ export function renderSharedScorecard(opts: {
   // Reuse the full tool, prefilled. The distinct OG description is set here.
   const base = renderScorePage({ url: opts.url, prefillTitle: opts.title, prefillScores: opts.scores });
   const desc = (opts.title ? `"${clipLocal(opts.title, 90)}" scored ` : 'A story scored ')
-    + `${opts.composite.toFixed(1)}/10 on Dot 1 News. Score your own.`;
+    + `${opts.composite.toFixed(1)}/10 on Discernt. Score your own.`;
   // swap the default description/title metas for the scorecard-specific ones
   return base
     .replace(

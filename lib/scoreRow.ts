@@ -72,33 +72,33 @@ export interface IndexBreakdown {
 }
 
 const BREAKDOWN_DEF: { key: IndexBreakdown['key']; name: string; color: string; items: [string, string][] }[] = [
-  { key: 'BAI', name: 'Biblical Alignment', color: '#B81616', items: [
+  { key: 'BAI', name: 'Scriptural Grounding', color: '#C79A2E', items: [
     ['Scriptural Consistency', 'bai_scriptural_consistency'],
-    ['Doctrinal Integrity', 'bai_doctrinal_integrity'],
-    ['Moral Framework', 'bai_moral_framework'],
-    ['Anthropology', 'bai_anthropology'],
-    ['Teleology', 'bai_teleology'],
+    ['Doctrinal Soundness', 'bai_doctrinal_integrity'],
+    ['Christ-Centeredness', 'bai_moral_framework'],
+    ['Image-Bearer Dignity', 'bai_anthropology'],
+    ['Hope & Purpose', 'bai_teleology'],
   ] },
-  { key: 'PSI', name: 'Prophetic Significance', color: '#8A6A17', items: [
-    ['Textual Linkage', 'psi_textual_linkage'],
-    ['Eschatological Category Fit', 'psi_eschatological_fit'],
-    ['Historical Pattern Continuity', 'psi_historical_continuity'],
-    ['Spiritual Discernment Impact', 'psi_spiritual_impact'],
-    ['Theological Restraint', 'psi_theological_restraint'],
+  { key: 'PSI', name: 'Kingdom Significance', color: '#2F5A8F', items: [
+    ['Gospel Advance', 'psi_textual_linkage'],
+    ['Movement of God', 'psi_eschatological_fit'],
+    ['Redemption & Transformation', 'psi_historical_continuity'],
+    ['Answered Prayer', 'psi_spiritual_impact'],
+    ['Discernment & Restraint', 'psi_theological_restraint'],
   ] },
-  { key: 'SCI', name: 'Source Credibility', color: '#1B6B5A', items: [
-    ['Primary Source Access', 'sci_primary_source_access'],
+  { key: 'SCI', name: 'Source Credibility', color: '#6B7280', items: [
+    ['Primary-Source Access', 'sci_primary_source_access'],
     ['Verification & Corroboration', 'sci_verification'],
-    ['Transparency & Accountability', 'sci_transparency'],
-    ['Track Record Accuracy', 'sci_track_record'],
+    ['Outlet Transparency', 'sci_transparency'],
+    ['Track Record', 'sci_track_record'],
     ['Editorial Standards', 'sci_editorial_standards'],
   ] },
-  { key: 'HII', name: 'Humanities Impact', color: '#2A4A7F', items: [
-    ['Human Dignity Recognition', 'hii_human_dignity'],
-    ['Compassion & Empathy', 'hii_compassion_empathy'],
-    ['Societal Impact Scope', 'hii_societal_impact'],
-    ['Justice & Responsibility', 'hii_justice_responsibility'],
-    ['Christ-Modeled Care Orientation', 'hii_christ_modeled_care'],
+  { key: 'HII', name: 'Fruit & Edification', color: '#3F7A5A', items: [
+    ['Faith Encouragement', 'hii_human_dignity'],
+    ['Compassion & Mercy', 'hii_compassion_empathy'],
+    ['Fruit of the Spirit', 'hii_societal_impact'],
+    ['Justice & Righteousness', 'hii_justice_responsibility'],
+    ['Glory to God', 'hii_christ_modeled_care'],
   ] },
 ];
 

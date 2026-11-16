@@ -107,7 +107,7 @@ export function renderArchive(opts: {
       <section class="archive-hero">
         <div class="kicker">The Archive</div>
         <h1>Every edition, kept.</h1>
-        <p>Dot 1 News is a daily, but nothing here disappears. Every story we have ever run stays on the record, ${totalStories > 0 ? `${totalStories} and counting, ` : ''}searchable and readable for as long as the paper exists.</p>
+        <p>Discernt is a daily, but nothing here disappears. Every story we have ever run stays on the record, ${totalStories > 0 ? `${totalStories} and counting, ` : ''}searchable and readable for as long as the paper exists.</p>
       </section>
       ${searchForm('')}
       ${body}
@@ -115,8 +115,8 @@ export function renderArchive(opts: {
     ${footer()}`;
 
   return page({
-    title: 'The Archive \u00b7 Dot 1 News',
-    desc: 'Every edition of Dot 1 News, kept on the record. Search and read every story we have run.',
+    title: 'The Archive \u00b7 Discernt',
+    desc: 'Every edition of Discernt, kept on the record. Search and read every story we have run.',
     url: opts.url,
     extraCss: CSS,
     inner,
@@ -153,8 +153,8 @@ export function renderSearchResults(opts: {
     ${footer()}`;
 
   return page({
-    title: `Search: ${clip(opts.query, 40)} \u00b7 Dot 1 News`,
-    desc: `Search results for "${clip(opts.query, 60)}" in the Dot 1 News archive.`,
+    title: `Search: ${clip(opts.query, 40)} \u00b7 Discernt`,
+    desc: `Search results for "${clip(opts.query, 60)}" in the Discernt archive.`,
     url: opts.url,
     extraCss: CSS,
     inner,

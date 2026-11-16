@@ -28,7 +28,7 @@ const PW_RULES: { test: (s: string) => boolean; label: string }[] = [
  */
 export default function AuthPanel({
   onSignedIn,
-  title = 'Sign in to Dot 1 News',
+  title = 'Sign in to Discernt',
   subtitle = 'Use the same account as the app.',
   showGetApp = true,
 }: {
@@ -178,7 +178,7 @@ export default function AuthPanel({
         </button>
       </form>
 
-      {showGetApp && <p className="apn-getapp">Prefer the app? <a href={APP_STORE}>Get Dot 1 News free</a>.</p>}
+      {showGetApp && <p className="apn-getapp">Prefer the app? <a href={APP_STORE}>Get Discernt free</a>.</p>}
     </div>
   );
 }

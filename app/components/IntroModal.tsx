@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-// First-visit welcome. Explains what Dot 1 News is (a way to read the news,
+// First-visit welcome. Explains what Discernt is (a way to read the news,
 // not another feed of it) once per browser, then stays out of the way. The
 // flag is remembered in localStorage; reads and writes are guarded so a
 // private window or blocked storage simply shows it again rather than breaking.
@@ -35,14 +35,14 @@ export default function IntroModal() {
       className="introwrap"
       role="dialog"
       aria-modal="true"
-      aria-label="Welcome to Dot 1 News"
+      aria-label="Welcome to Discernt"
       onClick={dismiss}
     >
       <div className="introcard" onClick={(e) => e.stopPropagation()}>
         <button className="introx" aria-label="Dismiss" onClick={dismiss}>
           &times;
         </button>
-        <div className="introkick">A Declared Standpoint</div>
+        <div className="introkick">Interpreting the Times</div>
         <h2 className="introtitle">
           We don&rsquo;t break the news.
           <br />

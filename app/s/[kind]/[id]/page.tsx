@@ -214,11 +214,11 @@ async function getCommentCount(id: string): Promise<number> {
 export async function generateMetadata({ params }: { params: { kind: string; id: string } }): Promise<Metadata> {
   const item = await getItem(params.kind, params.id);
   if (!item) {
-    return { title: 'Not found \u00b7 Dot 1 News', description: 'That story is no longer available.' };
+    return { title: 'Not found \u00b7 Discernt', description: 'That story is no longer available.' };
   }
   const desc = clip(item.summary || item.editorNote || 'A story chosen by an editor, with the reason it ran.', 180);
   const url = `${SITE_URL}/s/${params.kind}/${encodeURIComponent(params.id)}`;
-  const title = `${clip(item.title, 70)} \u00b7 Dot 1 News`;
+  const title = `${clip(item.title, 70)} \u00b7 Discernt`;
   return {
     title,
     description: desc,
@@ -227,7 +227,7 @@ export async function generateMetadata({ params }: { params: { kind: string; id:
       // Plain article card on purpose: Facebook drops the preview image when a link advertises a
       // raw video file from another host (og:video), so videos share as an image card that opens
       // the page, where the player is.
-      title, description: desc, url, type: 'article', siteName: 'Dot 1 News',
+      title, description: desc, url, type: 'article', siteName: 'Discernt',
       images: item.image ? [{ url: `${SITE_URL}/og/${params.kind}/${encodeURIComponent(params.id)}`, width: 1200, height: 630, type: 'image/png', alt: item.title }] : undefined,
     },
     twitter: {
@@ -371,7 +371,7 @@ export default async function SharePage({ params }: { params: { kind: string; id
 
   const label = item.kind === 'photo' ? 'The Lens'
     : item.kind === 'video' ? 'The Reel'
-    : (item.category || 'Dot 1 News');
+    : (item.category || 'Discernt');
   const cta = 'Carry the edition with you';
   const reactions = item.kind === 'article' ? await getReactionTotals(params.id) : null;
   const commentCount = item.kind === 'article' ? await getCommentCount(params.id) : 0;
@@ -392,7 +392,7 @@ export default async function SharePage({ params }: { params: { kind: string; id
           <h1>{item.title}</h1>
           {item.kind === 'article' && (
             <p className="byline">
-              By {item.author || 'Dot 1 Newsroom'}
+              By {item.author || 'Discerntroom'}
               {item.publishedAt ? <> &middot; <time dateTime={new Date(item.publishedAt).toISOString()}>{fmtDate(item.publishedAt)}</time></> : null}
             </p>
           )}
@@ -406,7 +406,7 @@ export default async function SharePage({ params }: { params: { kind: string; id
             <div className="player">
               <video controls playsInline preload="metadata" poster={item.image || undefined}>
                 <source src={item.videoUrl} type={videoMime(item.videoUrl) === 'video/quicktime' ? 'video/mp4' : videoMime(item.videoUrl)} />
-                Your browser cannot play this video here. It is also in the Dot 1 News app.
+                Your browser cannot play this video here. It is also in the Discernt app.
               </video>
             </div>
           ) : item.image ? (
@@ -499,7 +499,7 @@ export default async function SharePage({ params }: { params: { kind: string; id
                   <span>Composite {s.overall}/40 · {band.label}</span>
                   <span>Profile: {balance.label}</span>
                 </div>
-                <p className="sb-note">Read the four lenses together, not the total. A high score does not mean a story is true, morally good, prophetically fulfilled, or endorsed by Dot 1 News; a low score does not mean it is false or unimportant. Source Credibility concerns evidence only and is separate from theological alignment.</p>
+                <p className="sb-note">Read the four lenses together, not the total. A high score does not mean a story is true, morally good, prophetically fulfilled, or endorsed by Discernt; a low score does not mean it is false or unimportant. Source Credibility concerns evidence only and is separate from theological alignment.</p>
                 <p className="sb-ver">D1&#8209;4LS {s.instrumentVersion ? `v${s.instrumentVersion}` : 'assessment'} · an experimental framework still being tested. <a className="ln" href="/d1-4ls">How the scoring works</a></p>
                 </div>
               </details>
@@ -558,8 +558,8 @@ export default async function SharePage({ params }: { params: { kind: string; id
         </article>
         <section className="callout">
           <h3>{cta}.</h3>
-          <p>This story is part of today&rsquo;s edition in Dot 1 News. A few stories, each with the reason it ran, and then it ends.</p>
-          <a className="btn" href={APP_STORE}>Get Dot 1 News free &rsaquo;</a>
+          <p>This story is part of today&rsquo;s edition in Discernt. A few stories, each with the reason it ran, and then it ends.</p>
+          <a className="btn" href={APP_STORE}>Get Discernt free &rsaquo;</a>
           <p className="fine">Free on the App Store.</p>
         </section>
         <div className="backline"><a href="/">&lsaquo; Today&rsquo;s edition</a></div>

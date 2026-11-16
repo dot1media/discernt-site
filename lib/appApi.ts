@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * Browser-side client for the Dot 1 News app backend.
+ * Browser-side client for the Discernt app backend.
  *
  * The website reads content straight from the shared database (lib/db.ts), but
  * anything a reader DOES — signing in, commenting, reacting, managing their

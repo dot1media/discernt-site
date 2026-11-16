@@ -43,7 +43,7 @@ export default function AccountPage() {
               <p className="muted lead">Sign in to manage your profile, your daily edition, and your data.</p>
               <AuthPanel
                 onSignedIn={(u) => setMe(u)}
-                title="Sign in to Dot 1 News"
+                title="Sign in to Discernt"
                 subtitle="The same account as the app."
               />
             </div>
