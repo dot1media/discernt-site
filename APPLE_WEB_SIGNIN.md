@@ -1,6 +1,6 @@
 # Sign in with Apple, on the web
 
-The code for Apple sign-in on news.dot1.media is already in place. It stays
+The code for Apple sign-in on discernt.dot1.media is already in place. It stays
 hidden until the two environment variables below are set, so nothing looks
 broken before the Apple Developer setup is done. The web uses the same backend
 procedure as the app (`auth.signInWithApple`); the only difference is the token
@@ -11,22 +11,22 @@ audience, which is why the backend needs the web Services ID too.
 Apple Developer, Certificates, Identifiers & Profiles, Identifiers, add a new
 **Services ID** (not an App ID).
 
-- Description: Dot 1 News Web
+- Description: Discernt Web
 - Identifier: a reverse-domain string, for example `media.dot1.news.web`.
   This string is the web "client id" used in the env vars below.
 
 Then select the Services ID, enable **Sign in with Apple**, and Configure:
 
-- Primary App ID: the existing Dot 1 News app id (`app.dot1.dot1news`).
-- Domains and Subdomains: `news.dot1.media`
-- Return URLs: `https://news.dot1.media/account`
+- Primary App ID: the existing Discernt app id (`app.dot1.dot1news`).
+- Domains and Subdomains: `discernt.dot1.media`
+- Return URLs: `https://discernt.dot1.media/account`
 
 ## 2. Verify the domain
 
 Apple gives you a file named `apple-developer-domain-association.txt` on that
 configure screen. It must be served at:
 
-`https://news.dot1.media/.well-known/apple-developer-domain-association.txt`
+`https://discernt.dot1.media/.well-known/apple-developer-domain-association.txt`
 
 Add it to the news site (a `public/.well-known/` file), deploy, then click
 Verify in Apple Developer.
@@ -36,7 +36,7 @@ Verify in Apple Developer.
 News site (the `dot-1-news-site` Vercel project):
 
 - `NEXT_PUBLIC_APPLE_CLIENT_ID` = the Services ID, e.g. `media.dot1.news.web`
-- `NEXT_PUBLIC_APPLE_REDIRECT_URI` = `https://news.dot1.media/account`
+- `NEXT_PUBLIC_APPLE_REDIRECT_URI` = `https://discernt.dot1.media/account`
   (must exactly match a Return URL registered in step 1)
 
 Backend (the `dot-1-news-final` Vercel project):
