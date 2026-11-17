@@ -12,7 +12,7 @@ Apple Developer, Certificates, Identifiers & Profiles, Identifiers, add a new
 **Services ID** (not an App ID).
 
 - Description: Discernt Web
-- Identifier: a reverse-domain string, for example `media.dot1.news.web`.
+- Identifier: a reverse-domain string, for example `discernt.dot1.news.web`.
   This string is the web "client id" used in the env vars below.
 
 Then select the Services ID, enable **Sign in with Apple**, and Configure:
@@ -35,13 +35,13 @@ Verify in Apple Developer.
 
 News site (the `dot-1-news-site` Vercel project):
 
-- `NEXT_PUBLIC_APPLE_CLIENT_ID` = the Services ID, e.g. `media.dot1.news.web`
+- `NEXT_PUBLIC_APPLE_CLIENT_ID` = the Services ID, e.g. `discernt.dot1.news.web`
 - `NEXT_PUBLIC_APPLE_REDIRECT_URI` = `https://discernt.dot1.media/account`
   (must exactly match a Return URL registered in step 1)
 
 Backend (the `dot-1-news-final` Vercel project):
 
-- `APPLE_WEB_CLIENT_ID` = the same Services ID, e.g. `media.dot1.news.web`
+- `APPLE_WEB_CLIENT_ID` = the same Services ID, e.g. `discernt.dot1.news.web`
   (so the backend accepts identity tokens issued to the web client)
 
 ## 4. Redeploy
